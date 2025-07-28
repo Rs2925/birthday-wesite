@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Birthday Sanjana 💐</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Segoe+UI&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -43,28 +44,19 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.2);
       margin: 20px auto;
     }
-    iframe {
-      width: 100%;
-      max-width: 600px;
-      height: 315px;
-      border: none;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-    }
     .footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #666;
     }
 
-    /* 🎈 Balloon Animation */
+    /* 🎈 Balloons */
     .balloon {
       position: absolute;
       width: 40px;
       height: 60px;
       background-color: #f06292;
-      border-radius: 50% 50% 50% 50%;
+      border-radius: 50%;
       animation: float 10s infinite ease-in;
     }
     @keyframes float {
@@ -91,8 +83,18 @@
 </head>
 <body>
   <h1>🌷💫 Dear Wife, Happy Birthday! 🎉🎂</h1>
-  <img src="file:///C:/Users/Rahul/Downloads/1753541729476.jpg" alt="Sanjana in the garden" class="photo" />
-  
+
+  <!-- 🎶 Music -->
+  <audio id="bgm" src="music.mp3" preload="auto"></audio>
+  <script>
+    window.addEventListener("load", function() {
+      const music = document.getElementById("bgm");
+      music.play().catch(() => {
+        console.log("Autoplay might be blocked. Try clicking somewhere!");
+      });
+    });
+  </script>
+
   <div class="message">
     On this beautiful day, I celebrate you — your smile that lights up my world 😊, your strength that inspires me 💪, and your love that makes life truly meaningful ❤️.<br><br>
     May your year ahead be as graceful as your heart, as vibrant as your laughter, and as magical as our journey together 🥰<br><br>
@@ -100,13 +102,11 @@
     Let your dreams fly high today... and always. 🎈✨
   </div>
 
-  <iframe src="https://www.youtube.com/embed/5u4xTa3LR2U?autoplay=1&loop=1&playlist=5u4xTa3LR2U" allow="autoplay" allowfullscreen></iframe>
-
   <div class="footer">
     Created with 💕 by Rahul for Sanjana — Happy Birthday 🌟
   </div>
 
-  <!-- 🎈 Balloon Elements -->
+  <!-- 🎈 Balloons -->
   <div class="balloon" style="left:10%; animation-delay:0s;"></div>
   <div class="balloon" style="left:30%; animation-delay:2s;"></div>
   <div class="balloon" style="left:50%; animation-delay:4s;"></div>
