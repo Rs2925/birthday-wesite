@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Sanjana 💐</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #ffe6f0, #fff8f0);
+      overflow: hidden;
+      position: relative;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    h1 {
+      color: #e91e63;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+    .message {
+      font-size: 1.2em;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255,182,193,0.6);
+    }
+    .photo {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin: 20px auto;
+    }
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 315px;
+      border: none;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* 🎈 Balloon Animation */
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      background-color: #f06292;
+      border-radius: 50% 50% 50% 50%;
+      animation: float 10s infinite ease-in;
+    }
+    @keyframes float {
+      0% {bottom: -100px; left: 20%; opacity: 0;}
+      50% {opacity: 1;}
+      100% {bottom: 100%; left: 80%; opacity: 0;}
+    }
+
+    /* ✨ Cursor Sparkle */
+    .sparkle {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      background: gold;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: twinkle 0.5s ease-out;
+    }
+    @keyframes twinkle {
+      from {transform: scale(1);}
+      to {transform: scale(0);}
+    }
+  </style>
+</head>
+<body>
+  <h1>🌷💫 Dear Wife, Happy Birthday! 🎉🎂</h1>
+  <img src="file:///C:/Users/Rahul/Downloads/1753541729476.jpg" alt="Sanjana in the garden" class="photo" />
+  
+  <div class="message">
+    On this beautiful day, I celebrate you — your smile that lights up my world 😊, your strength that inspires me 💪, and your love that makes life truly meaningful ❤️.<br><br>
+    May your year ahead be as graceful as your heart, as vibrant as your laughter, and as magical as our journey together 🥰<br><br>
+    I feel lucky every day to walk beside you. Today, I just want to say — I love you more than words can tell. 💌<br><br>
+    Let your dreams fly high today... and always. 🎈✨
+  </div>
+
+  <iframe src="https://www.youtube.com/embed/5u4xTa3LR2U?autoplay=1&loop=1&playlist=5u4xTa3LR2U" allow="autoplay" allowfullscreen></iframe>
+
+  <div class="footer">
+    Created with 💕 by Rahul for Sanjana — Happy Birthday 🌟
+  </div>
+
+  <!-- 🎈 Balloon Elements -->
+  <div class="balloon" style="left:10%; animation-delay:0s;"></div>
+  <div class="balloon" style="left:30%; animation-delay:2s;"></div>
+  <div class="balloon" style="left:50%; animation-delay:4s;"></div>
+  <div class="balloon" style="left:70%; animation-delay:6s;"></div>
+  <div class="balloon" style="left:90%; animation-delay:8s;"></div>
+
+  <!-- ✨ Cursor Sparkles -->
+  <script>
+    document.addEventListener("mousemove", function(e) {
+      let sparkle = document.createElement("div");
+      sparkle.className = "sparkle";
+      sparkle.style.left = e.pageX + "px";
+      sparkle.style.top = e.pageY + "px";
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 500);
+    });
+  </script>
+</body>
+</html>
